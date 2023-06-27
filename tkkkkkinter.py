@@ -1,12 +1,9 @@
 from tkinter import *
 from tkinter import messagebox
 
-
 top =Tk()
 top.geometry("800x500")
 top.title('welcome')
-
-
 
 def insert():
     k = e1.get()
@@ -25,8 +22,6 @@ def insert():
         messagebox.showinfo("Result", "Record not inserted")
 
     db.commit()
-
-
 
 l= Label(top, text= 'Registration Form',bg='lightgrey',fg='black',font=('Arial 30'))
 l.place(x=300, y=50)
@@ -55,6 +50,3 @@ b1.place(x=450,y=350)
 
 top.configure(bg='lightgrey')
 top.mainloop()
-
-
-
